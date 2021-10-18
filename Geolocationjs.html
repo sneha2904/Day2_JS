@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    
+
+    
+    <body>
+        <h1> Java script Geo location</h1>
+        <p>click the button to get your cordinates</p>
+        <button onclick="getLocation()">Try it</button>
+        <p id="demo"></p>
+
+        <script>
+            const x=document.getElementById("demo");
+            function getLocation(){
+                try {
+                     navigator.geolocation.getCurrentPosition(showPosition);
+
+        
+                } catch  {
+                    x.innerHTML=err;
+         
+                }
+            }
+
+            function showPosition(position) {
+                x.innerHTML="Latitude:" +position.coords.latitude +
+                    "<br>Longitude: "  +position.coords.longitude ;
+            }
+        </script>
+    </body>
+</html>

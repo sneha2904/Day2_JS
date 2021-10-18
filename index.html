@@ -1,0 +1,26 @@
+<html>
+    <head>
+       <title>Js Impemetation</title> 
+    </head>
+
+    <body>
+        <p id="text1">Implementig External Java Script</p>
+        <h1> Default text</h1>
+        <!---
+
+        <button type="Submit" onclick=Displaytext() >Click to call External Script</button>
+        
+        <script src="Script/myjs.js"></script>
+        -->
+    
+        <script>
+        function Multiply(x,y){
+            return x*y;
+        }
+        document.getElementById("text1").innerHTML=Multiply(5,6);
+        </script>
+        
+
+        
+    </body>
+</html>

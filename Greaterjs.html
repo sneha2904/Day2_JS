@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p id="paraOne">enter a Number: <input id="s2">
+        <button onclick="Greatervalue()">Enter</button></p>
+        <p id="paraTwo"></p>
+    
+        <script>
+            function Greatervalue() {
+                var s1,s2;
+                s1=parseInt(document.getElementById("s2").value);
+                if(s1){
+                    if(s1<20)
+                       document.getElementById("paraTwo").innerHTML="less than 20";
+                    else
+                       document.getElementById("paraTwo").innerHTML="Greater than 20";
+                }
+                       
+                
+             }
+        </script>
+    </body>
+</html>

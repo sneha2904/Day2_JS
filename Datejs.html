@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <p id="Randomvalue"></p>
+
+        <script>
+            const d=new Date();
+            const weekday=["sun","mon","tue","wed","thu","fri","sat"];
+            document.getElementById("Randomvalue").innerHTML= weekday[d.getDay()];
+        </script>
+    </body>
+</html>
